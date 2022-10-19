@@ -27,3 +27,13 @@ export const products = [
         description: "processore Zen 2 di AMD con 8 core a una frequenza variabile limitata a 3,5 GHz. La GPU è un sistema su chip (SoC) personalizzato, basato su RDNA 2 di AMD, con 36 unità di calcolo funzionanti a frequenza variabile, limitato a 2,23 GHz e capace di 10,28 TFLOPS."
     }
 ]
+
+/*<div *ngFor="let product of products">
+<h3>
+  <a
+    [title]="product.name + ' details'"
+    [routerLink]="['/products', product.id]">
+    {{ product.name }}
+  </a>
+</h3>
+</div>*/

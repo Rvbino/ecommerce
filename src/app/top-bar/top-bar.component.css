@@ -1,0 +1,15 @@
+.head{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(33, 37, 41);
+    border: bottom;
+}
+
+.container{
+    color: white;
+}
+
+.nomesito{
+    color: white;
+    font-size: 30px;
+}

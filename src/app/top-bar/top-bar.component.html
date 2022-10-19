@@ -1,18 +1,36 @@
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Oblivion</span>
-      </a>
+<nav class="head">
+  <div class="container d-flex flex-wrap">
+    <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href=""></use>
+      </svg>
+      <span class="nomesito">Gameverse</span>
+    </a>
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+      <li><a href="#" class="nav-link px-2 text-white">Nintendo</a></li>
+      <li><a href="#" class="nav-link px-2 text-white">Xbox</a></li>
+      <li><a href="#" class="nav-link px-2 text-white">Play Station</a></li>
+    </ul>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a routerLink="/cart" style="padding: 10px" class="button fancy-button">
-          <i class="fas fa-cart-plus"></i>
-          Carrello ({{ itemCount() }})
-          </a></li>
-      </ul>
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+      <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+    </form>
 
-      
-    </header>
+    <ul class="nav">
+      <button type="button" class="btn btn-outline-light me-2">Login</button>
+      <button type="button" class="btn btn-primary">Sign-up</button>
+    </ul>
+
+    <button type="button" routerLink="/cart" style="margin-left:3em;" class="btn btn-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+        </path>
+      </svg>
+      <div class="badge bg-danger">{{ itemCount() }}</div>
+    </button>
+
   </div>
+</nav>
